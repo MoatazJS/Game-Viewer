@@ -5,7 +5,7 @@
   --primary-hover-text-color: rgb(183, 183, 204);
 }
 
-:light-theme {
+body.light-theme {
   --primary-bg-color: white;
   --secondary-bg-color: rgb(211, 155, 81);
   --primary-text-color: black;
