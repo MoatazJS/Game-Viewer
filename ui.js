@@ -6,7 +6,7 @@ class UI {
   }
 
   displayData = (games) => {
-    this.container.innerHTML = ""; // clear existing content
+    this.container.innerHTML = "";
 
     games.forEach((game) => {
       const card = document.createElement("div");

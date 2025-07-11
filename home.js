@@ -7,7 +7,7 @@ export async function getGames() {
     },
   };
   const api = await fetch(
-    "https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter",
+    "https://free-to-play-games-database.p.rapidapi.com/api/games?category=mmorpg",
     options
   );
   const res = await api.json();
