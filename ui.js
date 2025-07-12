@@ -1,5 +1,5 @@
+import displayDetails from "./details.js";
 import { getGames } from "./home.js";
-
 class UI {
   constructor(box) {
     this.container = document.querySelector(box);
@@ -34,6 +34,10 @@ class UI {
       `;
 
       this.container.appendChild(card);
+      card.addEventListener("click", () => {
+        const gameData = JSON.parse(card.getAttribute("data-game"));
+        displayDetails(gameData);
+      });
     });
   };
 }

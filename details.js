@@ -1,0 +1,25 @@
+export default function displayDetails(data) {
+  const detailsBox = `
+    <div class="col-md-4">
+      <figure>
+        <img src="${data.thumbnail}" class="w-100" alt="details image" />
+      </figure>
+    </div>
+    <div class="col-md-8">
+      <div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item text-reset"><a href="#">Home</a></li>
+            <li class="breadcrumb-item text-info" aria-current="page">${data.title}</li>
+          </ol>
+        </nav>
+        <h1>${data.title}</h1>
+        <h3>About ${data.title}</h3>
+        <p>${data.description}</p>
+      </div>
+    </div>
+  `;
+  document.getElementById("detailsData").innerHTML = detailsBox;
+  document.querySelector(".details").classList.remove("d-none");
+  document.querySelector(".box").classList.add("d-none");
+}
