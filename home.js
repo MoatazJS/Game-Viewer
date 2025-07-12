@@ -1,9 +1,3 @@
-let links = document.querySelectorAll(".nav-link");
-
-links.forEach((link) => {
-  link.addEventListener("click", async function () {});
-});
-
 export async function getGames(category = "mmorpg") {
   const options = {
     method: "GET",
