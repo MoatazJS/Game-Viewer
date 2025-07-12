@@ -1,4 +1,10 @@
-export async function getGames() {
+let links = document.querySelectorAll(".nav-link");
+
+links.forEach((link) => {
+  link.addEventListener("click", async function () {});
+});
+
+export async function getGames(category = "mmorpg") {
   const options = {
     method: "GET",
     headers: {
@@ -7,7 +13,7 @@ export async function getGames() {
     },
   };
   const api = await fetch(
-    "https://free-to-play-games-database.p.rapidapi.com/api/games?category=mmorpg",
+    `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}`,
     options
   );
   const res = await api.json();
