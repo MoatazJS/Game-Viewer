@@ -15,7 +15,7 @@ export default function displayDetails(data) {
         </nav>
         <h1>${data.title}</h1>
         <h3>About ${data.title}</h3>
-        <p>${data.description}</p>
+        <p>${data.short_description}</p>
       </div>
     </div>
   `;
