@@ -39,6 +39,7 @@ main {
 }
 a {
   color: var(--primary-text-color) !important;
+  font-weight: bold !important;
 }
 
 .navbar-brand {
@@ -80,4 +81,8 @@ a {
 
 .clicked {
   color: #c4267a !important;
+}
+
+.light-theme .clicked {
+  color: rgb(78, 88, 179) !important;
 }
