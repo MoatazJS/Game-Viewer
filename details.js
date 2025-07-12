@@ -16,10 +16,16 @@ export default function displayDetails(data) {
         <h1>${data.title}</h1>
         <h3>About ${data.title}</h3>
         <p>${data.short_description}</p>
+        <button id="backBtn" class="btn btn-secondary mt-3">Back to Games</button>
       </div>
     </div>
   `;
   document.getElementById("detailsData").innerHTML = detailsBox;
   document.querySelector(".details").classList.remove("d-none");
   document.querySelector(".box").classList.add("d-none");
+
+  document.getElementById("backBtn").addEventListener("click", () => {
+    document.querySelector(".details").classList.add("d-none");
+    document.querySelector(".box").classList.remove("d-none");
+  });
 }
