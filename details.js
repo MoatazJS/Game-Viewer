@@ -14,7 +14,9 @@ export default function displayDetails(data) {
           </ol>
         </nav>
         <h1>${data.title}</h1>
-        <h3>About ${data.title}</h3>
+        <h3>${data.publisher}</h3>
+        <p>${data.release_date}</p>
+        <p>${data.platform}</p>
         <p>${data.short_description}</p>
         <button id="backBtn" class="btn btn-secondary mt-3">Back to Games</button>
       </div>
