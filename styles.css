@@ -64,3 +64,16 @@ a {
   font-weight: 400;
   font-style: normal;
 }
+
+.details {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+.details h1,
+.details h3,
+.details p,
+.details .breadcrumb-item,
+.details .breadcrumb-item a {
+  color: var(--primary-text-color);
+}
