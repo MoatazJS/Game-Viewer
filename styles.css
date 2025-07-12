@@ -44,3 +44,7 @@ a {
 .navbar-brand {
   color: var(--primary-text-color) !important;
 }
+
+.bi {
+  cursor: pointer;
+}

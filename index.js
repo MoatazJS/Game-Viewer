@@ -1,6 +1,7 @@
 import UI from "./ui.js";
 import { getGames } from "./home.js";
-
+import themeSwitch from "./themeUI.js";
+themeSwitch();
 document.addEventListener("DOMContentLoaded", async () => {
   const ui = new UI(".box");
 
