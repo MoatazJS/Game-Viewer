@@ -34,8 +34,9 @@ class UI {
       `;
 
       this.container.appendChild(card);
-      card.addEventListener("click", () => {
-        const gameData = JSON.parse(card.getAttribute("data-game"));
+      const cardDiv = card.querySelector(".card"); // ✅ get the actual card div inside
+      cardDiv.addEventListener("click", () => {
+        const gameData = JSON.parse(cardDiv.getAttribute("data-game"));
         displayDetails(gameData);
       });
     });
