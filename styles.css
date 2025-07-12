@@ -77,3 +77,7 @@ a {
 .details .breadcrumb-item a {
   color: var(--primary-text-color);
 }
+
+.clicked {
+  color: #c4267a !important;
+}

@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   links.forEach((link) => {
     link.addEventListener("click", async function () {
+      links.forEach((el) => el.classList.remove("clicked"));
+
+      this.classList.add("clicked");
       const category = this.getAttribute("data-category");
 
       try {
